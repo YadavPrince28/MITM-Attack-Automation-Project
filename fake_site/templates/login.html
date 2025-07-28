@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fake Login</title>
+<style>
+  body {
+    background: #1e1e2f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f0f0f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .login-container {
+    background: #2c2c44;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(30,30,47,0.6);
+    width: 320px;
+    text-align: center;
+  }
+  h2 {
+    margin-bottom: 25px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+  }
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0 20px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #3a3a5a;
+    color: #f0f0f5;
+  }
+  input[type="text"]::placeholder,
+  input[type="password"]::placeholder {
+    color: #aaaabb;
+  }
+  input[type="submit"] {
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 12px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  input[type="submit"]:hover {
+    background-color: #357ABD;
+  }
+  .footer {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #666688;
+  }
+</style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Fake Login</h2>
+    <form action="/log" method="post">
+      <input type="text" name="username" placeholder="Username" required autofocus><br>
+      <input type="password" name="password" placeholder="Password" required><br>
+      <input type="submit" value="Login">
+    </form>
+    <div class="footer">© 2025 Your Company</div>
+  </div>
+</body>
+</html>
