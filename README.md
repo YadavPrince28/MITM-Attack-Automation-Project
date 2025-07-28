@@ -52,7 +52,7 @@ cd MITM-Attack-Automation-Project
 ### 🔧 3. Enable IP Forwarding
      sudo sysctl -w net.ipv4.ip_forward=1
 ### 🔧 4. Run GUI Control Panel
-      sudo python3 main.py
+      sudo python3.13 main.py
 
 ### 📁 Log Files
 | File                  | Description                         |
